@@ -23,7 +23,7 @@ $('h3').each(function(){
 
 var userInput = $('button').on("click", addEvent).each;
 
-let saving = JSON.parse(localStorage.getItem('eventItem')) || [];
+// retrieve from localstorage here
 
 function addEvent(event){
     let inputField = prompt("Add your event here")
