@@ -19,16 +19,21 @@ $('h3').each(function(){
     }
 })
 
-// I was unable to get the user input sections to work from this point on, Ive figured out that the prompt ignores all info within each parent but I was unable to figure out a fix in time
-
-var userInput = $('button').on("click", addEvent).each;
-
+// grabs the text value from sibling elements with the class 'description' and saves the value to localstorage
+$(".saveBtn").on("click", function(){
+    var divText = $(this).siblings(".description").val();
+    var divKey = $(this).parent().attr("id");
+    localStorage.setItem(divKey, divText);
+})
 // retrieve from localstorage here
 
-function addEvent(event){
-    let inputField = prompt("Add your event here")
-    // let dataStorage = document.querySelector('.data-storage');
-    var inputSibling = userInput.sibling("ul");
-
-    inputSibling.append(inputField(value) + " ");
-}
+// retrieves values from localstorage by hour marker
+$("#9 .description").val(localStorage.getItem("9"));
+$("#10 .description").val(localStorage.getItem("10"));
+$("#11 .description").val(localStorage.getItem("11"));
+$("#12 .description").val(localStorage.getItem("12"));
+$("#13 .description").val(localStorage.getItem("13"));
+$("#14 .description").val(localStorage.getItem("14"));
+$("#15 .description").val(localStorage.getItem("15"));
+$("#16 .description").val(localStorage.getItem("16"));
+$("#17 .description").val(localStorage.getItem("17"));

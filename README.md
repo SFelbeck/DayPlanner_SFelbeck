@@ -1,10 +1,10 @@
 # DayPlanner_SFelbeck
 
-This assignment was far more difficult than I had initially determined it to be, I struggled quite a bit in javascript before a classmate pointed out that we were using jquery and at first that seemed to be a far better solution. However I was unable to finish the user input portion of the assignment. I was able to append list items to the top of the screen with a prompt but ran out of time before I could figure out the remaining steps.
-My classmates were extremely useful in the stufy groups however that ultimately could not overcome the relentless march of time.
+I had a number of stumbles with this assignment, in particular with the save buttons and localstorage, and I found myself relying quite a bit on my classmates and tutors for help with this assignment.
+I was given partial code for a dayplanner app and needed to add timeblocks in html. In the Javascript I had to ensure that the timeblocks changed color to reflect the time of day as well as save the value stored in a text space as a saved event unique to that hour.
 
 ![screenshot](./assets/assets/site.png)
 
-you can find the current state of the application here
+you can find the application here!
 
 <a href="https://sfelbeck.github.io/DayPlanner_SFelbeck/">You can find the site here</a>
